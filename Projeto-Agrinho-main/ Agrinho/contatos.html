@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de contato do Agrinho">
+    <title>Contatos - Agrinho</title>
+
+    <link rel="stylesheet" href="CSS/style3.css">
+</head>
+
+<body>
+
+    <header class="cabecalho-site">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Página Inicial</a>
+                </li>
+
+                <li>
+                    <a href="parceiros.html">Parceiros</a>
+                </li>
+
+                <li>
+                    <a href="contatos.html">Contatos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato">
+
+            <div id="formulario">
+                <h1>Entre em contato</h1>
+
+                <form action="process_form.php" method="post">
+
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Digite seu nome"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="message">Mensagem:</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5"
+                            placeholder="Digite sua mensagem"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit">Enviar mensagem</button>
+
+                </form>
+            </div>
+
+            <div id="contatos">
+                <h2>Informações de contato</h2>
+
+                <p><strong>Local:</strong> Ponta Grossa - PR</p>
+
+                <p>
+                    <strong>Telefone:</strong>
+                    (42) 99904-0008 / 3225-8915
+                </p>
+
+                <p>
+                    <strong>E-mail:</strong>
+                    regionalpontagrossa@senarpr.org.br
+                </p>
+
+                <p>
+                    <strong>Endereço:</strong>
+                    Rua Theodoro Rosas, 1384 – 2° andar – Centro
+                    <br>
+                    CEP: 84010-180 – Ponta Grossa
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>
+```
